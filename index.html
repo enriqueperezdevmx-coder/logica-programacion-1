@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logica-pogramacion-1</title>
     <link rel="icon" href="data:,">
+    <!--Linck de css -->
+    <link rel="stylesheet" href="syles.css">
 </head>
 <body>
-    <Main>
-        <h1>Hola mundo Soy enrique XD</h1>
+    <Main class="card">
+      <h1>Analizandor de Número </h1>
+      <p id="mensaje-espera" class="espera">Por favor, responde a las ventanas emergentes...</p>
+      <section id="secction-error" class="error oculto">
+        <p>><strong>Error</strong>Debes ingresar valores númericos válidos. Por favor, recarga la página. </p>
+      </section>
+      <section id="seccion-iguales" class="iguales oculto">
+        <h2>Números iguales</h2>
+        <p>Los tres números ingresador son idénticos: <strong id="num-igual"></strong> </p>
+      </section>
+      <section id="seccion-resultado" class="oculto">
+        <h2>Resultados del analisis:</h2>
+        <ul>
+            <li><strong>Número Mayor:</strong> <span id="res-mayor"></span></li>
+            <li><strong>Número del Centro:</strong> <span id="res-centro"></span></li>
+            <li><strong>Número Menor:</strong> <span id="res-menor"></span></li>
+        </ul>
+
+        <h3>Ordenamiento requerido</h3>
+        <p><strong>De Mayor a menor:</strong><span id="res-desc"></span></p>
+        <p><strong>De Menor a mayor:</strong><span id="res-asc"></span></p>
+      </section>
+
     </Main>
  <!--Seccion de Refencias a archivos-->
  <script src="apps.js" ></script>
