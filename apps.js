@@ -20,3 +20,13 @@ else if (num1 === num2 && num2 === num3) {
 
 }
 //4. Analizar, ordenar y mostrar los resultados (si son diferentes )
+else {
+    //Guardar el numero en un arreglo 
+    let numeros = [num1, num2, num3];
+
+    //Ordenar de menor a mayor 
+    let ordenMenorAMayor = [...numeros].sort(function(a, b) {
+        return a - b;
+     });
+     
+    
