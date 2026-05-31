@@ -28,5 +28,23 @@ else {
     let ordenMenorAMayor = [...numeros].sort(function(a, b) {
         return a - b;
      });
-     
+    let ordenMayorAMenor = [...numeros].sort(function(a, b ) {
+        return b-a;
+    });
     
+// Inyectar los valores individuales en los <span> correspondientes
+    // Como ordenMayorAMenor está de mayor a menor, la posición 0 es el mayor, la 1 el centro y la 2 el menor
+    document.getElementById("res-mayor").textContent = ordenMayorAMenor[0];
+    document.getElementById("res-centro").textContent = ordenMayorAMenor[1];
+    document.getElementById("res-menor").textContent = ordenMayorAMenor[2];
+    
+    // Inyectar los arreglos completos unidos por comas
+    document.getElementById("res-desc").textContent = ordenMayorAMenor.join(", ");
+    document.getElementById("res-asc").textContent = ordenMenorAMayor.join(", ");
+
+    // Finalmente, quitamos la clase "oculto" a la sección de resultados para que aparezca en pantalla
+    document.getElementById("seccion-resultados").classList.remove("oculto");
+
+}
+
+
