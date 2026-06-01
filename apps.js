@@ -9,13 +9,13 @@ document.getElementById("mensaje-espera").classList.add("oculto");
 /*Validacion de numeros, proceso */
 if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
  //    Si hay error (ej. escribieron letras), mostramos la seccion de error 
-    document.getElementById("seccion-error").classList.remove("oculto");
+    document.getElementById("section-error").classList.remove("oculto");
 }
 //3. Identificar si los tres números son identicos 
 else if (num1 === num2 && num2 === num3) {
     //<Strong> Seccion verde 
     document.getElementById("num-igual").textContent = num1;
-    document.getElementById("seccion-iguales").classList.remove("oculto");
+    document.getElementById("section-iguales").classList.remove("oculto");
 
 
 }
@@ -43,7 +43,7 @@ else {
     document.getElementById("res-asc").textContent = ordenMenorAMayor.join(", ");
 
     // Finalmente, quitamos la clase "oculto" a la sección de resultados para que aparezca en pantalla
-    document.getElementById("seccion-resultados").classList.remove("oculto");
+    document.getElementById("section-resultados").classList.remove("oculto");
 
 }
 
